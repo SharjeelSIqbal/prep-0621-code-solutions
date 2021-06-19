@@ -12,6 +12,7 @@
   <div id="container"></div>
   <script>
     // Your code here
+    var $button = document.querySelector('button');
     document.addEventListener('DOMContentLoaded', contentLoader);
     function contentLoader() {
       console.log('content loaded!');
@@ -24,7 +25,7 @@
     function $helloWorld() {
       console.log('Mouse is clicking');
     }
-    document.addEventListener('button', buttonPress);
+    $button.addEventListener('click', buttonPress);
     function buttonPress() {
       console.log('button has been pressed');
     }
